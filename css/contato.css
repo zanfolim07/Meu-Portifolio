@@ -1,0 +1,154 @@
+/* ===== CONTATO ===== */
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato-wrapper {
+  display: flex;
+  gap: 80px;
+  margin-top: 80px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* ===== ESQUERDA ===== */
+.contato-esquerda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contato-esquerda h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.contato-desc {
+  color: var(--text-color);
+  line-height: 1.7;
+  font-size: var(--paragraph-size);
+}
+
+.contato-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.contato-social a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 17px;
+  transition: color var(--transition-default), transform var(--transition-default);
+}
+
+.contato-social a:hover {
+  color: var(--color-tertiary);
+  transform: translateX(6px);
+}
+
+.contato-social a img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+/* ===== DIREITA ===== */
+.contato-direita {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contato-nome,
+.contato-email,
+.contato-mensagem {
+  width: 100%;
+  padding: 16px 22px;
+  border-radius: 16px;
+  border: none;
+  background: var(--color-secondary);
+  color: var(--text-color);
+  outline: none;
+  font-size: var(--paragraph-size);
+  transition: border var(--transition-default), box-shadow var(--transition-default);
+  border: 2px solid transparent;
+  font-family: inherit;
+}
+
+.contato-nome:focus,
+.contato-email:focus,
+.contato-mensagem:focus {
+  border-color: var(--color-tertiary);
+  box-shadow: 0 0 12px rgba(97, 165, 255, 0.15);
+}
+
+.contato-nome::placeholder,
+.contato-email::placeholder,
+.contato-mensagem::placeholder {
+  color: var(--text-color);
+}
+
+.contato-mensagem {
+  height: 160px;
+  resize: none;
+}
+
+.contato-btn {
+  width: 100%;
+  height: 64px;
+  border-radius: var(--border-radius-btn);
+  border: none;
+  background: var(--color-tertiary);
+  color: var(--color-quaternary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background var(--transition-default), transform var(--transition-default);
+  font-size: var(--paragraph-size);
+  font-family: inherit;
+}
+
+.contato-btn:hover {
+  background: var(--color-hover);
+  transform: scale(1.02);
+}
+
+/* ===== LAPTOP PEQUENO ===== */
+@media (min-width: 761px) and (max-width: 1024px) {
+  .contato-wrapper { gap: 50px; }
+  .contato-esquerda h2 { font-size: 28px; }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 760px) {
+  .contato-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 430px) {
+  .contato-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .contato-esquerda h2 { font-size: 24px; }
+  .contato-desc { font-size: 13px; }
+  .contato-social a { font-size: 14px; }
+  .contato-nome,
+  .contato-email,
+  .contato-mensagem { font-size: 13px; padding: 12px 16px; }
+  .contato-btn { height: 50px; font-size: 14px; }
+}

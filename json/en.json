@@ -1,0 +1,50 @@
+{
+  "nav_inicio": "Home",
+  "nav_sobre": "About",
+  "nav_habilidades": "Skills",
+  "nav_projetos": "Projects",
+  "nav_certificados": "Certificates",
+  "nav_contato": "Contact",
+
+  "nome": "Guilherme Zanfolim",
+  "cargo": "Front-end Developer",
+  "btn_cv": "Download CV",
+
+  "sobre_titulo": "About",
+  "sobre_h2": "Hi! My name is Guilherme Zanfolim",
+  "sobre_texto": "I'm a student of Systems Analysis and Development, driven by curiosity and the challenge of turning ideas into functional digital solutions. I started my programming journey in technical high school, developing complete projects, including an e-commerce as a final assignment. I have a great ability to learn, I'm dedicated and proactive, always seeking to grow and add value to the projects and teams I'm part of.",
+
+  "tab_habilidades": "Skills",
+  "tab_sociais": "Soft Skills",
+  "tab_ferramentas": "Tools",
+
+  "html_desc": "Language responsible for structuring web page content. Defines elements like headings, paragraphs, images and links.",
+  "css_desc": "Used to style and organize page layouts. Controls colors, fonts, spacing and responsiveness.",
+  "js_desc": "Adds interactivity and dynamism to websites. Allows creating animations, validations and real-time actions.",
+  "php_desc": "Programming language focused on the back-end. Allows creating dynamic systems and database integration.",
+  "react_desc": "JavaScript library for building modern and dynamic interfaces. Uses reusable components to facilitate code organization.",
+
+  "vscode_desc": "Lightweight and powerful code editor used to program in various languages, with extension support and Git integration.",
+  "github_desc": "Platform to store, version and share code using Git, widely used by developers.",
+  "figma_desc": "Online UI/UX design tool that allows creating layouts and prototypes collaboratively.",
+  "illustrator_desc": "Program focused on creating vector art such as logos, icons and illustrations.",
+  "photoshop_desc": "Image editing and manipulation software, widely used for design, photo retouching and digital creation.",
+
+  "social_comunicacao": "Good communication",
+  "social_proatividade": "Proactivity",
+  "social_criatividade": "Creativity",
+  "social_comprometimento": "Commitment",
+  "social_equipe": "Ease of teamwork",
+
+  "projeto_titulo": "Projects",
+  "organo_desc": "Project developed in the Alura course using React, JavaScript and CSS, focused on creating responsive cards for web interfaces. The project involved developing components applying front-end best practices.",
+  "techboard_desc": "Project developed during the Alura HTML and CSS training, consisting of a simple landing page applying fundamental concepts of web structuring and styling, such as HTML semantics, CSS selectors, responsiveness and front-end best practices.",
+  "ver_todos": "See all...",
+
+  "certificados_titulo": "Certificates",
+  "contato_titulo": "Contact",
+  "contato_desc": "If you enjoyed my projects and want to get in touch,\nfill in below with your name and your message.\nAs soon as I receive it, I will get back to you.",
+  
+  "footer_direitos": "© 2026 Guilherme Zanfolim. All rights reserved.",
+  "footer_cargo": "Full-stack Developer"
+}

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+:root {
+    --container-padding: 112px;
+    --header-height: 100px;
+    --padding-section: 40px 20px;
+    --border-radius-btn: 50px;
+    --transition-default: 0.3s ease;
+    --paragraph-size: 20px;
+    --h2-size: 30px;
+    --h3-size: 36px;
+    --section-gap: 200px;
+    --section-title-margin: 200px;
+    --color-primary: #000000;
+    --color-quaternary: #FFFFFF;
+    --color-tertiary: #61A5FF;
+    --color-hover: #0051BB;
+    --color-bottom-teriary: #C9E0FF;
+    --color-secondary: #e5e5e5;
+    --text-color: #717171;
+    --footer-title: #111;
+    --footer-text: #333;
+    --footer-muted: #888;
+    --footer-copy: #aaa;
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] {
+    --color-primary: #E2EEFF;
+    --color-quaternary: #040D1A;
+    --color-tertiary: #61A5FF;
+    --color-hover: #93C5FF;
+    --color-bottom-teriary: #0D2645;
+    --color-secondary: #0D2240;
+    --text-color: #7FA8CC;
+    --footer-title: #D6E8FF;
+    --footer-text: #8FBAD8;
+    --footer-muted: #4E7EA0;
+    --footer-copy: #2E5470;
+}
+
+[data-theme="dark"] body {
+    background: radial-gradient(ellipse at 20% 0%, #03111F 0%, transparent 55%),
+                radial-gradient(ellipse at 80% 10%, #020A18 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 100%, #030D1A 0%, transparent 60%),
+                linear-gradient(160deg, #000304 0%, #010508 35%, #010810 65%, #000304 100%);
+    background-attachment: fixed;
+}
+
+[data-theme="dark"] .cursor-glow {
+    background: radial-gradient(circle, rgba(97, 165, 255, 0.18) 0%, transparent 70%);
+}
+
+[data-theme="dark"] .section-title hr {
+    box-shadow: 0 0 14px rgba(97, 165, 255, 0.45);
+}
+
+/* ===== CURSOR ===== */
+.cursor-glow {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(97, 165, 255, 0.35) 0%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: opacity var(--transition-default);
+    z-index: 0;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/* ===== TIPOGRAFIA GLOBAL ===== */
+p {
+    font-size: var(--paragraph-size);
+    line-height: 1.6;
+    color: var(--text-color);
+}
+h2 { font-size: var(--h2-size); }
+h3 {
+    font-size: var(--h3-size);
+    color: var(--color-primary);
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: var(--section-title-margin);
+}
+.section-title hr {
+    border: none;
+    height: 5px;
+    background-color: var(--color-tertiary);
+    border-radius: var(--border-radius-btn);
+    margin-top: 8px;
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal-esquerda {
+  transform: translateX(-80px);
+}
+.reveal-direita {
+  transform: translateX(80px);
+}
+.reveal-baixo {
+  transform: translateY(50px);
+}
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+/* ===== MAIN ===== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-gap);
+}
+
+/* ===== UTILITÁRIOS GLOBAIS ===== */
+.hover-scale { transition: transform var(--transition-default); }
+.hover-scale:hover { transform: scale(1.08); }
+
+/* ===== LAPTOP PEQUENO ===== */
+@media (min-width: 761px) and (max-width: 1024px) {
+    :root {
+        --container-padding: 60px;
+        --paragraph-size: 18px;
+        --h2-size: 26px;
+        --h3-size: 30px;
+        --section-gap: 120px;
+        --section-title-margin: 120px;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 760px) {
+    :root {
+        --container-padding: 60px;
+        --paragraph-size: 17px;
+        --h2-size: 24px;
+        --h3-size: 28px;
+        --section-gap: 100px;
+        --section-title-margin: 100px;
+    }
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 430px) {
+    :root {
+        --container-padding: 20px;
+        --paragraph-size: 15px;
+        --h2-size: 22px;
+        --h3-size: 24px;
+        --section-gap: 70px;
+        --section-title-margin: 70px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

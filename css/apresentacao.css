@@ -1,0 +1,133 @@
+/* ===== APRESENTAÇÃO ===== */
+.apresentacao {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -190px;
+  padding-top: var(--header-height);
+  padding-bottom: 0;
+  position: relative;
+  gap: 40px;
+}
+
+.apresentaçao-texto h3 {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 5px;
+  min-height: 77px;
+}
+
+.apresentaçao-texto h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 60px;
+  min-height: 48px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.icons a:hover {
+  transform: scale(1.08);
+}
+
+.icons a:not(.btn-cv) {
+  background-color: var(--color-secondary);
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--transition-default);
+}
+
+.btn-cv {
+  background-color: var(--color-tertiary);
+  width: 197px;
+  height: 45px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--color-quaternary);
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform var(--transition-default);
+}
+
+#cargo span {
+  color: var(--color-tertiary);
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--color-tertiary);
+  font-weight: 300;
+  animation: piscar 0.8s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes piscar {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+/* ===== TABLET — até 760px ===== */
+@media (max-width: 760px) {
+  .apresentacao {
+    padding-top: calc(var(--header-height) + 20px);
+  }
+}
+
+/* ===== MOBILE — até 430px ===== */
+@media (max-width: 430px) {
+  .apresentaçao-texto h3 {
+    font-size: 30px;
+    min-height: 36px;
+  }
+  .apresentaçao-texto h2 {
+    font-size: 20px;
+    min-height: 26px;
+    margin-bottom: 30px;
+  }
+  .icons {
+    gap: 16px;
+  }
+  .icons a:not(.btn-cv) {
+    width: 28px;
+    height: 28px;
+  }
+  .icons a:not(.btn-cv) img {
+    width: 12px;
+    height: 12px;
+  }
+  .btn-cv {
+    width: 130px;
+    height: 36px;
+    font-size: 12px;
+    gap: 0;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .btn-cv img {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+}

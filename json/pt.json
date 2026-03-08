@@ -1,0 +1,50 @@
+{
+  "nav_inicio": "Inicio",
+  "nav_sobre": "Sobre",
+  "nav_habilidades": "Habilidades",
+  "nav_projetos": "Projetos",
+  "nav_certificados": "Certificados",
+  "nav_contato": "Contato",
+
+  "nome": "Guilherme Zanfolim",
+  "cargo": "Desenvolvedor Front-end",
+  "btn_cv": "Baixar CV",
+
+  "sobre_titulo": "Sobre",
+  "sobre_h2": "Olá! me chamo Guilherme Zanfolim",
+  "sobre_texto": "Sou estudante de Análise e Desenvolvimento de Sistemas, movido pela curiosidade e pelo desafio de transformar ideias em soluções digitais funcionais. Iniciei minha trajetória na programação no ensino médio técnico, desenvolvendo projetos completos, incluindo um e-commerce como trabalho final. Tenho grande capacidade de aprendizado, sou dedicado e proativo, sempre buscando evoluir e agregar valor aos projetos e às equipes das quais faço parte.",
+
+  "tab_habilidades": "Habilidades",
+  "tab_sociais": "Habilidades sociais",
+  "tab_ferramentas": "Ferramentas",
+
+  "html_desc": "Linguagem responsável por estruturar o conteúdo das páginas web. Define elementos como títulos, parágrafos, imagens e links.",
+  "css_desc": "Usado para estilizar e organizar o layout das páginas. Controla cores, fontes, espaçamentos e responsividade.",
+  "js_desc": "Adiciona interatividade e dinamismo aos sites. Permite criar animações, validações e ações em tempo real.",
+  "php_desc": "Linguagem de programação voltada para o back-end. Permite criar sistemas dinâmicos e integração com banco de dados.",
+  "react_desc": "Biblioteca JavaScript para criar interfaces modernas e dinâmicas. Utiliza componentes reutilizáveis para facilitar a organização do código.",
+
+  "vscode_desc": "Editor de código leve e poderoso usado para programar em várias linguagens, com suporte a extensões e integração com Git.",
+  "github_desc": "Plataforma para armazenar, versionar e compartilhar códigos usando Git, muito usada por desenvolvedores.",
+  "figma_desc": "Ferramenta online de design de interfaces (UI/UX) que permite criar layouts e protótipos de forma colaborativa.",
+  "illustrator_desc": "Programa voltado para criação de artes vetoriais como logotipos, ícones e ilustrações.",
+  "photoshop_desc": "Software de edição e manipulação de imagens, muito usado para design, tratamento de fotos e criação digital.",
+
+  "social_comunicacao": "Boa comunicação",
+  "social_proatividade": "Proatividade",
+  "social_criatividade": "Criatividade",
+  "social_comprometimento": "Comprometimento",
+  "social_equipe": "Facilidade para trabalho em equipe",
+
+  "projeto_titulo": "Projetos",
+  "organo_desc": "Projeto desenvolvido no curso da Alura utilizando React, JavaScript e CSS, com foco na criação de cards responsivos para interfaces web. O projeto envolveu o desenvolvimento de componentes aplicando boas práticas de front-end.",
+  "techboard_desc": "Projeto desenvolvido durante o treinamento de HTML e CSS da Alura, consiste em uma landing page simples aplicando os conceitos fundamentais de estruturação e estilização web, como semântica HTML, seletores CSS, responsividade e boas práticas de front-end.",
+  "ver_todos": "Ver todos...",
+
+  "certificados_titulo": "Certificados",
+  "contato_titulo": "Contato",
+  "contato_desc": "Caso tenha gostado dos meus projetos e queira entrar em contato,\npreencha abaixo com seu nome e sua mensagem.\nAssim que receber, retorno para conversarmos melhor.",
+  
+  "footer_direitos": "© 2026 Guilherme Zanfolim. Todos os direitos reservados.",
+  "footer_cargo": "Desenvolvedor Full-stack"
+}

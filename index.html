@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portifolio Guilherme Zanfolim</title>
+  </head>
+  <body>
+    <header class="header container">
+  <div class="logo">
+    <img src="img/logo-desktop.png" alt="" />
+  </div>
+  <nav class="nav">
+    <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
+    <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
+    <a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a>
+    <a href="#projetos" data-i18n="nav_projetos">Projetos</a>
+    <a href="#certificados" data-i18n="nav_certificados">Certificados</a>
+    <a href="#contato" data-i18n="nav_contato">Contato</a>
+  </nav>
+  <div class="actions">
+    <div class="lang">
+      <span class="lang-btn" data-lang="pt">PT</span>
+      <span>|</span>
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+    <button class="theme-toggle">
+      <span class="bolinha"></span>
+      <img class="icon-sun" src="img/icon-sol-preto.svg" alt="Sol" />
+      <img class="icon-moon" src="img/icon-lua-preta.svg" alt="Lua" style="display: none" />
+    </button>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+    <section class="apresentacao container" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="apresentaçao-texto">
+    <h3 id="nome" data-i18n="nome"></h3>
+    <h2 id="cargo" data-i18n="cargo"></h2>
+  </div>
+  <div class="icons">
+    <a href="https://github.com/zanfolim07" target="_blank">
+      <img src="img/icon-github.svg" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/guilherme-zanfolim-202865315" target="_blank">
+      <img src="img/icon-linkedin.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://instagram.com/seuusuario" target="_blank">
+      <img src="img/icon-instagram.svg" alt="Instagram" />
+    </a>
+    <a href="mailto:seuemail@gmail.com">
+      <img src="img/icon-gmail.svg" alt="Email" />
+    </a>
+    <a href="docs/curriculo.pdf" download class="btn-cv">
+      <span data-i18n="btn_cv">Baixar CV</span>
+      <img src="img/icon-download.svg" alt="" />
+    </a>
+  </div>
+</section>
+
+<section class="tech-loop">
+  <div class="tech-track">
+    <div class="tech-list">
+      <div class="tech-item"><img src="img/icone-html-azul.svg" alt="HTML5" /><span>HTML5</span></div>
+      <div class="tech-item"><img src="img/icone-css-azul.svg" alt="CSS3" /><span>CSS3</span></div>
+      <div class="tech-item"><img src="img/icone-react-azul.svg" alt="React" /><span>React</span></div>
+      <div class="tech-item"><img src="img/icone-php-azul.svg" alt="PHP" /><span>PHP</span></div>
+      <div class="tech-item"><img src="img/icone-js-azul.svg" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="tech-item"><img src="img/icone-github-azul.svg" alt="GitHub" /><span>GitHub</span></div>
+      <div class="tech-item"><img src="img/icone-vscode-azul.svg" alt="VSCode" /><span>VSCode</span></div>
+      <div class="tech-item"><img src="img/icone-figma-azul.svg" alt="Figma" /><span>Figma</span></div>
+      <div class="tech-item"><img src="img/icone-illustrator-azul.svg" alt="Illustrator" /><span>Illustrator</span></div>
+      <div class="tech-item"><img src="img/icone-photoshop-azul.svg" alt="Photoshop" /><span>Photoshop</span></div>
+    </div>
+    <div class="tech-list" aria-hidden="true">
+      <div class="tech-item"><img src="img/icone-html-azul.svg" alt="HTML5" /><span>HTML5</span></div>
+      <div class="tech-item"><img src="img/icone-css-azul.svg" alt="CSS3" /><span>CSS3</span></div>
+      <div class="tech-item"><img src="img/icone-react-azul.svg" alt="React" /><span>React</span></div>
+      <div class="tech-item"><img src="img/icone-php-azul.svg" alt="PHP" /><span>PHP</span></div>
+      <div class="tech-item"><img src="img/icone-js-azul.svg" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="tech-item"><img src="img/icone-github-azul.svg" alt="GitHub" /><span>GitHub</span></div>
+      <div class="tech-item"><img src="img/icone-vscode-azul.svg" alt="VSCode" /><span>VSCode</span></div>
+      <div class="tech-item"><img src="img/icone-figma-azul.svg" alt="Figma" /><span>Figma</span></div>
+      <div class="tech-item"><img src="img/icone-illustrator-azul.svg" alt="Illustrator" /><span>Illustrator</span></div>
+      <div class="tech-item"><img src="img/icone-photoshop-azul.svg" alt="Photoshop" /><span>Photoshop</span></div>
+    </div>
+  </div>
+</section>
+
+    <section class="sobre container" id="sobre">
+  <div class="section-title">
+    <h3 data-i18n="sobre_titulo">Sobre</h3>
+    <hr />
+  </div>
+  <div class="sobre-content">
+    <div class="text-sobre">
+      <h2 data-i18n="sobre_h2">Olá! me chamo Guilherme Zanfolim</h2>
+      <p data-i18n="sobre_texto">
+        Sou estudante de Análise e Desenvolvimento de Sistemas, movido pela
+        curiosidade e pelo desafio de transformar ideias em soluções
+        digitais funcionais. Iniciei minha trajetória na programação no
+        ensino médio técnico, desenvolvendo projetos completos, incluindo um
+        e-commerce como trabalho final. Tenho grande capacidade de
+        aprendizado, sou dedicado e proativo, sempre buscando evoluir e
+        agregar valor aos projetos e às equipes das quais faço parte.
+      </p>
+      <div class="linkedin-sobre">
+        
+        <a href="https://www.linkedin.com/in/guilherme-zanfolim-202865315" target="_blank">
+          <img src="img/icon-linkedin-branco.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+    <div class="img-sobre">
+      <img src="img/img-sobre.jpg" alt="Guilherme Zanfolim" />
+    </div>
+  </div>
+</section>  
+
+   <section class="skills" id="habilidades-section">
+  <div class="tabs">
+    <div class="tab-indicator"></div>
+    <button class="tab active" data-tab="habilidades" data-i18n="tab_habilidades">
+      Habilidades
+    </button>
+    <button class="tab" data-tab="sociais" data-i18n="tab_sociais">
+      Habilidades sociais
+    </button>
+    <button class="tab" data-tab="ferramentas" data-i18n="tab_ferramentas">
+      Ferramentas
+    </button>
+  </div>
+  <div class="tab-content active" id="habilidades-content">
+    <div class="section-title">
+      <h3 data-i18n="tab_habilidades">Habilidades</h3>
+      <hr />
+    </div>
+    <div class="skill">
+      <div class="skill-item">
+        <img src="img/icone-html-azul.svg" />
+        <h4>HTML5</h4>
+        <p data-i18n="html_desc">
+          Linguagem responsável por estruturar o conteúdo das páginas web.
+          Define elementos como títulos, parágrafos, imagens e links.
+        </p>
+      </div>
+      <div class="skill-item">
+        <img src="img/icone-css-azul.svg" />
+        <h4>CSS3</h4>
+        <p data-i18n="css_desc">
+          Usado para estilizar e organizar o layout das páginas. Controla
+          cores, fontes, espaçamentos e responsividade.
+        </p>
+      </div>
+      <div class="skill-item">
+        <img src="img/icone-js-azul.svg" />
+        <h4>JavaScript</h4>
+        <p data-i18n="js_desc">
+          Adiciona interatividade e dinamismo aos sites. Permite criar
+          animações, validações e ações em tempo real.
+        </p>
+      </div>
+      <div class="linha-baixo">
+        <div class="skill-item">
+          <img src="img/icone-php-azul.svg" />
+          <h4>PHP</h4>
+          <p data-i18n="php_desc">
+            Linguagem de programação voltada para o back-end. Permite criar
+            sistemas dinâmicos e integração com banco de dados.
+          </p>
+        </div>
+        <div class="skill-item">
+          <img src="img/icone-react-azul.svg" />
+          <h4>React</h4>
+          <p data-i18n="react_desc">
+            Biblioteca JavaScript para criar interfaces modernas e
+            dinâmicas. Utiliza componentes reutilizáveis para facilitar a
+            organização do código.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="sociais-content">
+    <div class="section-title">
+      <h3 data-i18n="tab_sociais">Habilidades Sociais</h3>
+      <hr />
+    </div>
+    <div class="soft-skills">
+      <span class="soft-skill-tag" data-i18n="social_comunicacao">Boa comunicação</span>
+      <span class="soft-skill-tag" data-i18n="social_proatividade">Proatividade</span>
+      <span class="soft-skill-tag" data-i18n="social_criatividade">Criatividade</span>
+      <div class="quebra"></div>
+      <span class="soft-skill-tag" data-i18n="social_comprometimento">Comprometimento</span>
+      <span class="soft-skill-tag" data-i18n="social_equipe">Facilidade para trabalho em equipe</span>
+    </div>
+  </div>
+  <div class="tab-content" id="ferramentas-content">
+    <div class="section-title">
+      <h3 data-i18n="tab_ferramentas">Ferramentas</h3>
+      <hr />
+    </div>
+    <div class="skill">
+      <div class="skill-item">
+        <img src="img/icone-vscode-azul.svg" />
+        <h4>Visual Code</h4>
+        <p data-i18n="vscode_desc">
+          Editor de código leve e poderoso usado para programar em várias
+          linguagens, com suporte a extensões e integração com Git.
+        </p>
+      </div>
+      <div class="skill-item">
+        <img src="img/icone-github-azul.svg" />
+        <h4>GitHub</h4>
+        <p data-i18n="github_desc">
+          Plataforma para armazenar, versionar e compartilhar códigos usando
+          Git, muito usada por desenvolvedores.
+        </p>
+      </div>
+      <div class="skill-item">
+        <img src="img/icone-figma-azul.svg" />
+        <h4>Figma</h4>
+        <p data-i18n="figma_desc">
+          Ferramenta online de design de interfaces (UI/UX) que permite
+          criar layouts e protótipos de forma colaborativa.
+        </p>
+      </div>
+      <div class="linha-baixo">
+        <div class="skill-item">
+          <img src="img/icone-illustrator-azul.svg" />
+          <h4>Illustrator</h4>
+          <p data-i18n="illustrator_desc">
+            Programa voltado para criação de artes vetoriais como logotipos,
+            ícones e ilustrações.
+          </p>
+        </div>
+        <div class="skill-item">
+          <img src="img/icone-photoshop-azul.svg" />
+          <h4>Photoshop</h4>
+          <p data-i18n="photoshop_desc">
+            Software de edição e manipulação de imagens, muito usado para
+            design, tratamento de fotos e criação digital.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="projetos container" id="projetos">
+  <div class="section-title">
+    <h3 data-i18n="projeto_titulo">Projetos</h3>
+    <hr />
+  </div>
+  <div class="projetos-track">
+    <div class="projetos-list">
+      <div class="projeto-card">
+        <img src="img/note-organo.svg" alt="Organo" />
+        <div class="projeto-card-info">
+          <h2>Organo</h2>
+          <p data-i18n="organo_desc">Projeto desenvolvido no curso da Alura utilizando React, JavaScript e CSS, com foco na criação de cards responsivos para interfaces web.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">React</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/Organo-React/" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <img src="img/note-techboard.png" alt="Techboard" />
+        <div class="projeto-card-info">
+          <h2>Techboard</h2>
+          <p data-i18n="techboard_desc">Projeto desenvolvido durante o treinamento de HTML e CSS da Alura, consiste em uma landing page simples aplicando os conceitos fundamentais.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/tecboard" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <img src="img/note-organo.svg" alt="Organo" />
+        <div class="projeto-card-info">
+          <h2>Organo</h2>
+          <p data-i18n="organo_desc">Projeto desenvolvido no curso da Alura utilizando React, JavaScript e CSS, com foco na criação de cards responsivos para interfaces web.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">React</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/Organo-React/" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <img src="img/note-techboard.png" alt="Techboard" />
+        <div class="projeto-card-info">
+          <h2>Techboard</h2>
+          <p data-i18n="techboard_desc">Projeto desenvolvido durante o treinamento de HTML e CSS da Alura, consiste em uma landing page simples aplicando os conceitos fundamentais.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/tecboard" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projetos-list" aria-hidden="true">
+      <div class="projeto-card">
+        <img src="img/note-organo.svg" alt="Organo" />
+        <div class="projeto-card-info">
+          <h2>Organo</h2>
+          <p data-i18n="organo_desc">Projeto desenvolvido no curso da Alura utilizando React, JavaScript e CSS, com foco na criação de cards responsivos para interfaces web.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">React</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/Organo-React/" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <img src="img/note-techboard.png" alt="Techboard" />
+        <div class="projeto-card-info">
+          <h2>Techboard</h2>
+          <p data-i18n="techboard_desc">Projeto desenvolvido durante o treinamento de HTML e CSS da Alura, consiste em uma landing page simples aplicando os conceitos fundamentais.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/tecboard" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <img src="img/note-organo.svg" alt="Organo" />
+        <div class="projeto-card-info">
+          <h2>Organo</h2>
+          <p data-i18n="organo_desc">Projeto desenvolvido no curso da Alura utilizando React, JavaScript e CSS, com foco na criação de cards responsivos para interfaces web.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">React</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/Organo-React/" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <img src="img/note-techboard.png" alt="Techboard" />
+        <div class="projeto-card-info">
+          <h2>Techboard</h2>
+          <p data-i18n="techboard_desc">Projeto desenvolvido durante o treinamento de HTML e CSS da Alura, consiste em uma landing page simples aplicando os conceitos fundamentais.</p>
+          <div class="projeto-tags">
+            <span class="projeto-tag">HTML</span>
+            <span class="projeto-tag">CSS3</span>
+            <a href="https://zanfolim07.github.io/tecboard" target="_blank" class="projeto-ver">
+              <img src="img/icon-olho-azul.svg" alt="Ver projeto" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="certificados container" id="certificados">
+      <div class="section-title">
+        <h3 data-i18n="certificados_titulo">Certificados</h3>
+        <hr />
+      </div>
+      <div class="options" id="options"></div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <section class="contato container" id="contato">
+  <div class="section-title">
+    <h3 data-i18n="contato_titulo">Contato</h3>
+    <hr />
+  </div>
+  <div class="contato-wrapper">
+    <div class="contato-esquerda">
+      <h2 data-i18n="contato_h2">Deixe sua mensagem</h2>
+      <p class="contato-desc" data-i18n="contato_desc">
+      Caso tenha gostado dos meus projetos e queira entrar em contato,
+        preencha ao lado com seu nome, email e sua mensagem.
+        Assim que receber, retorno para conversarmos melhor.
+      </p>
+      <div class="contato-social">
+        <a href="https://www.linkedin.com/in/guilherme-zanfolim-202865315" target="_blank">
+          <img src="img/icon-linkedin.svg" alt="LinkedIn" />
+          <span>guilherme-zanfolim</span>
+        </a>
+        <a href="https://github.com/zanfolim07" target="_blank">
+          <img src="img/icon-github.svg" alt="GitHub" />
+          <span>zanfolim07</span>
+        </a>
+        <a href="mailto:seuemail@gmail.com">
+          <img src="img/icon-gmail.svg" alt="Email" />
+          <span>guilhermezanfolimm@gmail.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="contato-direita">
+      <input type="text" class="contato-nome" placeholder="Nome..." />
+      <input type="email" class="contato-email" placeholder="Email..." />
+      <textarea class="contato-mensagem" placeholder="Mensagem..."></textarea>
+      <button class="contato-btn" data-i18n="contato_btn">ENVIAR</button>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer container">
+      <div class="footer-content container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./img/logo-desktop.png" alt="Logo" class="footer-logo-img" />
+            <div>
+              <h4>Guilherme Zanfolim</h4>
+              <p data-i18n="footer_cargo">Desenvolvedor Full-stack</p>
+            </div>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+            <li><a href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+            <li><a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a></li>
+          </ul>
+          <ul>
+            <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+            <li><a href="#certificados" data-i18n="nav_certificados">Certificados</a></li>
+            <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_direitos">
+          © 2026 Guilherme Zanfolim. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
