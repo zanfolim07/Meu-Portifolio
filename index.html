@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portifolio Guilherme Zanfolim</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <header class="header container">
@@ -111,7 +116,6 @@
         agregar valor aos projetos e às equipes das quais faço parte.
       </p>
       <div class="linkedin-sobre">
-        
         <a href="https://www.linkedin.com/in/guilherme-zanfolim-202865315" target="_blank">
           <img src="img/icon-linkedin-branco.svg" alt="LinkedIn" />
         </a>
@@ -123,7 +127,8 @@
   </div>
 </section>  
 
-   <section class="skills" id="habilidades-section">
+   <!-- ✅ CORRIGIDO: id era "habilidades-section", agora é "habilidades" -->
+   <section class="skills" id="habilidades">
   <div class="tabs">
     <div class="tab-indicator"></div>
     <button class="tab active" data-tab="habilidades" data-i18n="tab_habilidades">
@@ -344,7 +349,7 @@
             <span class="projeto-tag">HTML</span>
             <span class="projeto-tag">CSS3</span>
             <a href="https://zanfolim07.github.io/tecboard" target="_blank" class="projeto-ver">
-              <img src="img/icon-olho.png alt="Ver projeto" />
+              <img src="img/icon-olho.png" alt="Ver projeto" />
             </a>
           </div>
         </div>
