@@ -8,7 +8,6 @@ async function loadLang(lang) {
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    // Ignora nome e cargo pois são controlados pela animação
     if (key === 'nome' || key === 'cargo') return;
     if (translations[key]) {
       el.textContent = translations[key];

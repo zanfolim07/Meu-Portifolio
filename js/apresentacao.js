@@ -19,7 +19,7 @@ export function iniciarApresentacao() {
       nomeIndex++;
       setTimeout(digitarNome, 80);
     } else {
-      // Move cursor para o cargo
+      
       nome.textContent = nomeTexto;
       cargo.innerHTML = '<span class="cursor">|</span>';
       setTimeout(rodar, 500);

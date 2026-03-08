@@ -45,14 +45,13 @@
 }
 
 .img-sobre img {
-    width: 280px;
-    height: 280px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     transition: transform var(--transition-default);
 }
-
 .img-sobre img:hover {
     transform: scale(1.05);
 }

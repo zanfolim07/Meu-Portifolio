@@ -43,7 +43,6 @@ export function iniciarProjetos() {
     clearInterval(autoplayTimer);
   }
 
-  // Dots
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       pararAutoplay();
@@ -52,7 +51,7 @@ export function iniciarProjetos() {
     });
   });
 
-  // Setas do teclado
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight' && atual < total - 1) {
       pararAutoplay();
@@ -66,7 +65,6 @@ export function iniciarProjetos() {
     }
   });
 
-  // Pausar ao passar o mouse
   const secao = document.querySelector('.projetos');
   if (secao) {
     secao.addEventListener('mouseenter', pararAutoplay);
