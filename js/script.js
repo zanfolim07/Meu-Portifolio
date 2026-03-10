@@ -28,3 +28,5 @@ iniciarHeader();
 import { iniciarScrollReveal } from "../js/scrollreveal.js";
 iniciarScrollReveal();
 
+import { iniciarContato } from "../js/contact.js";
+iniciarContato();
