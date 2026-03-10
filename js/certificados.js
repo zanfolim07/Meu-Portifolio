@@ -1,10 +1,9 @@
 export function iniciarCertificados() {
   const items = [
-    { bg: '../img/certificados-react-com-javascript.png'},
-    { bg: '../img/certificados-react-com-javascript.png' },
-    { bg: '../img/certificados-react-com-javascript.png' },
-    { bg: '../img/certificados-react-com-javascript.png' },
-    { bg: '../img/certificados-react-com-javascript.png' },
+    { bg: '../img/REACT-JAVASCRIPT.png' },
+    { bg: '../img/HTML-E-CSS-AMBIENTE,ESTRUTURA-E-ESTILO.png'},
+    { bg: '../img/HTML-E-CSS-RESPONSIVIDADE.png' },
+    { bg: '../img/HTML-E-CSS-FORMULARIOS.png' },
   ];
 
   const container = document.getElementById('options');
